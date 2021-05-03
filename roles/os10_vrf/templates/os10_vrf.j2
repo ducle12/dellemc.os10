@@ -105,6 +105,7 @@ interface {{ map_ip_interface.intf_id }}
  ip vrf forwarding {{ vrf.vrf_name }}
                 {% endif %}
               {% endif %}
+ exit
             {% endfor %}
           {% endif %}
           {% if vrf.upd_src_ip_loopback_id is defined %}
